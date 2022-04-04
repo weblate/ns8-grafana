@@ -3,7 +3,7 @@
 # Most parts of this file come from podman-generate-systemd.
 #
 [Unit]
-Description=grafana server
+Description=Grafana server
 
 [Service]
 Environment=PODMAN_SYSTEMD_UNIT=%n
@@ -17,8 +17,9 @@ ExecStart=/usr/bin/podman run \
     --cidfile=%t/grafana.ctr-id \
     --cgroups=no-conmon \
     --replace --name=%N \
-    --publish=127.0.0.1:${TCP_PORT}:8080 \
-    ${ECHO_SERVER_IMAGE}
+    --publish=127.0.0.1:${TCP_PORT}:3000 \
+    --volume=grafana-data:/var/lib/grafana \
+    ${GRAFANA_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/grafana.ctr-id -t 10
 ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/grafana.ctr-id
 PIDFile=%t/grafana.pid

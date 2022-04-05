@@ -36,11 +36,13 @@ with open('local.yml', 'w') as fp:
     fp.write("datasources:\n")
     fp.write('  - name: Local Promethus\n')
     fp.write('    type: prometheus\n')
+    fp.write('    uid: prometheus\n')
     fp.write('    access: proxy\n')
     fp.write(f'    url: http://node/{node_path}\n')
 
     fp.write('  - name: Local Loki\n')
     fp.write('    type: loki\n')
+    fp.write('    uid: loki\n')
     fp.write('    access: proxy\n')
     fp.write(f'    url: {logcli["LOKI_ADDR"]}\n')
     fp.write(f'    basicAuth: true\n')

@@ -18,6 +18,7 @@ ExecStart=/usr/bin/podman run \
     --cgroups=no-conmon \
     --replace --name=%N \
     --publish=127.0.0.1:${TCP_PORT}:3000 \
+    --network=slirp4netns:allow_host_loopback=true --add-host=node:10.0.2.2 \
     --volume=grafana-data:/var/lib/grafana \
     ${GRAFANA_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/grafana.ctr-id -t 10

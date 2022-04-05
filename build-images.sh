@@ -30,7 +30,6 @@ buildah config --entrypoint=/ \
     --label="org.nethserver.authorizations=traefik@any:routeadm" \
     --label="org.nethserver.tcp-ports-demand=1" \
     --label="org.nethserver.rootfull=0" \
-    --label="org.nethserver.flags=no_data_backup" \
     --label="org.nethserver.images=docker.io/grafana/grafana:8.4.5" \
     "${container}"
 # Commit the image

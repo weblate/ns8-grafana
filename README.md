@@ -33,10 +33,23 @@ Example:
 The above command will:
 - start and configure the grafana instance
 - setup traefik route with HTTPS redirect and Let's Encrypt certficate
+- setup local Loki and Prometheus instances
+- setup default dashboards for node exporter and Loki
 
 Send a test HTTP request to the grafana backend service:
 
-    curl https://grafana.nethserver.org/
+
+### Monitor local node
+
+To monitor the node execute:
+```
+add-module ghcr.io/nethserver/node_exporter:latest
+add-module ghcr.io/nethserver/prometheus:latest
+add-module ghcr.io/nethserver/grafana:latest
+api-cli run module/grafana1/configure-module --data '{"domain": "grafana.nethserver.org"}'
+``` 
+
+At the end, access `https://grafana.nethserver.org/` to see a fully-functional Grafana installation monitoring the local node.
 
 ## Uninstall
 

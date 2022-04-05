@@ -17,6 +17,12 @@ Output example:
 
 Let's assume that the grafana instance is named `grafana1`.
 
+Default credentials are: 
+- user: `admin`
+- password: `admin`
+
+The password can be changed after the first login.
+
 Launch `configure-module`, by setting the following parameters:
 - `domain`: domain name for Grafana installation
 

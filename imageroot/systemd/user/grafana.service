@@ -11,6 +11,7 @@ EnvironmentFile=%S/state/environment
 WorkingDirectory=%S/state
 Restart=always
 ExecStartPre=/bin/rm -f %t/grafana.pid %t/grafana.ctr-id
+ExecStartPre=runagent provision
 ExecStart=/usr/bin/podman run \
     --detach \
     --conmon-pidfile=%t/grafana.pid \
@@ -20,6 +21,7 @@ ExecStart=/usr/bin/podman run \
     --publish=127.0.0.1:${TCP_PORT}:3000 \
     --network=slirp4netns:allow_host_loopback=true --add-host=node:10.0.2.2 \
     --volume=grafana-data:/var/lib/grafana \
+    --volume=%S/state/local.yml:/etc/grafana/provisioning/datasources/local.yml \
     ${GRAFANA_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/grafana.ctr-id -t 10
 ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/grafana.ctr-id

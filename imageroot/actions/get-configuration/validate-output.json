@@ -3,6 +3,12 @@
     "title": "Get grafana configuration",
     "$id": "http://nethserver.org/json-schema/task/output/grafana/get-configuration",
     "description": "Get grafana configuration",
-    "examples": [],
+    "examples": [
+        {
+            "host": "grafana.nethserver.org",
+            "http2https": true,
+            "lets_encrypt": true
+        }
+    ],
     "type": "object"
 }

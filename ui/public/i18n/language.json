@@ -24,7 +24,11 @@
     "title": "Settings",
     "configure_instance": "Configure {instance}",
     "save": "Save",
-    "test_filed": "Test field"
+    "host": "Host name",
+    "http2https": "Redirect HTTP to HTTPS",
+    "lets_encrypt": "Let's Encrypt certificate",
+    "disabled": "Disabled",
+    "enabled": "Enabled"
   },
   "about": {
     "title": "About"

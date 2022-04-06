@@ -20,10 +20,16 @@
 # along with NethServer.  If not, see COPYING.
 #
 
-import json
 import sys
-import agent
+import json
 
-config = {}
+config = {"host": "", "http2https": True, "lets_encrypt": False}
+
+# Read config file
+try:
+    with open('config.json', 'r') as fp:
+        config = json.loads(fp.read())
+except:
+    pass
 
 json.dump(config, fp=sys.stdout)

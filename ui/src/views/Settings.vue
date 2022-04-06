@@ -19,14 +19,13 @@
       <cv-column>
         <cv-tile light>
           <cv-form @submit.prevent="configureModule">
-            <!-- TODO remove test field and code configuration fields -->
             <cv-text-input
-              :label="$t('settings.test_filed')"
-              v-model="testField"
-              :placeholder="$t('settings.test_filed')"
+              :label="$t('settings.host')"
+              v-model="host"
+              :placeholder="$t('settings.host')"
               :disabled="loading.getConfiguration || loading.configureModule"
-              :invalid-message="error.testField"
-              ref="testField"
+              :invalid-message="error.host"
+              ref="host"
             ></cv-text-input>
             <cv-row v-if="error.configureModule">
               <cv-column>
@@ -38,6 +37,34 @@
                 />
               </cv-column>
             </cv-row>
+            <cv-toggle
+              value="letsEncrypt"
+              :label="$t('settings.lets_encrypt')"
+              v-model="lets_encrypt"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              class="mg-bottom"
+            >
+              <template slot="text-left">{{
+                $t("settings.disabled")
+              }}</template>
+              <template slot="text-right">{{
+                $t("settings.enabled")
+              }}</template>
+            </cv-toggle>
+            <cv-toggle
+              value="http2https"
+              :label="$t('settings.http2https')"
+              v-model="http2https"
+              :disabled="loading.getConfiguration || loading.configureModule"
+              class="mg-bottom"
+            >
+              <template slot="text-left">{{
+                $t("settings.disabled")
+              }}</template>
+              <template slot="text-right">{{
+                $t("settings.enabled")
+              }}</template>
+            </cv-toggle>
             <NsButton
               kind="primary"
               :icon="Save20"
@@ -74,7 +101,9 @@ export default {
         page: "settings",
       },
       urlCheckInterval: null,
-      testField: "", // TODO remove
+      host: "",
+      lets_encrypt: false,
+      http2https: false,
       loading: {
         getConfiguration: false,
         configureModule: false,
@@ -82,7 +111,9 @@ export default {
       error: {
         getConfiguration: "",
         configureModule: "",
-        testField: "", // TODO remove
+        host: "",
+        http2https: "",
+        lets_encrypt: ""
       },
     };
   },
@@ -148,27 +179,22 @@ export default {
     getConfigurationCompleted(taskContext, taskResult) {
       this.loading.getConfiguration = false;
       const config = taskResult.output;
+      this.host = config.host;
+      this.http2https = config.http2https;
+      this.lets_encrypt = config.lets_encrypt;
 
-      // TODO set configuration fields
-      // ...
-
-      // TODO remove
-      console.log("config", config);
-
-      // TODO focus first configuration field
-      this.focusElement("testField");
+      this.focusElement("host");
     },
     validateConfigureModule() {
       this.clearErrors(this);
       let isValidationOk = true;
 
-      // TODO remove testField and validate configuration fields
-      if (!this.testField) {
+      if (!this.host) {
         // test field cannot be empty
-        this.error.testField = this.$t("common.required");
+        this.error.host = this.$t("common.required");
 
         if (isValidationOk) {
-          this.focusElement("testField");
+          this.focusElement("host");
           isValidationOk = false;
         }
       }
@@ -216,7 +242,9 @@ export default {
         this.createModuleTaskForApp(this.instanceName, {
           action: taskAction,
           data: {
-            // TODO configuration fields
+            host: this.host,
+            http2https: this.http2https,
+            lets_encrypt: this.lets_encrypt
           },
           extra: {
             title: this.$t("settings.configure_instance", {

@@ -24,11 +24,13 @@ Default credentials are:
 The password can be changed after the first login.
 
 Launch `configure-module`, by setting the following parameters:
-- `domain`: domain name for Grafana installation
+- `host`: domain name for Grafana installation
+- `lets_encrypt`: boolean, if set to true traefik will request a valid Let's Encrypt certificate
+- `http2https`: boolean, if set to true trafik will redirct HTTP request to HTTPS
 
 Example:
 
-    api-cli run module/grafana1/configure-module --data '{"domain": "grafana.nethserver.org"}'
+    api-cli run module/grafana1/configure-module --data '{"host": "grafana.nethserver.org", "http2https": true, "lets_encrypt": false}'
 
 The above command will:
 - start and configure the grafana instance
@@ -46,7 +48,7 @@ To monitor the node execute:
 add-module ghcr.io/nethserver/node_exporter:latest
 add-module ghcr.io/nethserver/prometheus:latest
 add-module ghcr.io/nethserver/grafana:latest
-api-cli run module/grafana1/configure-module --data '{"domain": "grafana.nethserver.org"}'
+api-cli run module/grafana1/configure-module --data '{"host": "grafana.nethserver.org", "http2https": true, "lets_encrypt": false}'
 ``` 
 
 At the end, access `https://grafana.nethserver.org/` to see a fully-functional Grafana installation monitoring the local node.

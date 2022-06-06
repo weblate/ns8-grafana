@@ -1,7 +1,7 @@
 {
-  "name": "grafana",
+  "name": "Grafana",
   "description": {
-    "en": "Grafana"
+    "en": "Observability platform and interactive visualization web application"
   },
   "categories": [],
   "authors": [

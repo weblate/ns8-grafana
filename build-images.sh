@@ -16,11 +16,11 @@ container=$(buildah from scratch)
 # Reuse existing nodebuilder-grafana container, to speed up builds
 if ! buildah containers --format "{{.ContainerName}}" | grep -q nodebuilder-grafana; then
     echo "Pulling NodeJS runtime..."
-    buildah from --name nodebuilder-grafana -v "${PWD}:/usr/src:Z" docker.io/library/node:lts
+    buildah from --name nodebuilder-grafana -v "${PWD}:/usr/src:Z" docker.io/library/node:18.13.0-alpine
 fi
 
 echo "Build static UI files with node..."
-buildah run nodebuilder-grafana sh -c "cd /usr/src/ui && yarn install && yarn build"
+buildah run --env="NODE_OPTIONS=--openssl-legacy-provider" nodebuilder-grafana sh -c "cd /usr/src/ui && yarn install && yarn build"
 
 # Add imageroot directory to the container image
 buildah add "${container}" imageroot /imageroot

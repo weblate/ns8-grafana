@@ -26,7 +26,7 @@ The password can be changed after the first login.
 Launch `configure-module`, by setting the following parameters:
 - `host`: domain name for Grafana installation
 - `lets_encrypt`: boolean, if set to true traefik will request a valid Let's Encrypt certificate
-- `http2https`: boolean, if set to true trafik will redirct HTTP request to HTTPS
+- `http2https`: boolean, if set to true traefik will redirct HTTP request to HTTPS
 
 Example:
 
@@ -34,7 +34,7 @@ Example:
 
 The above command will:
 - start and configure the grafana instance
-- setup traefik route with HTTPS redirect and Let's Encrypt certficate
+- setup traefik route with HTTPS redirect and Let's Encrypt certificate
 - setup local Loki and Prometheus instances
 - setup default dashboards for node exporter and Loki
 
@@ -52,6 +52,11 @@ api-cli run module/grafana1/configure-module --data '{"host": "grafana.nethserve
 ``` 
 
 At the end, access `https://grafana.nethserver.org/` to see a fully-functional Grafana installation monitoring the local node.
+
+### Bundled dashboards
+
+The module contains some dashboards ready to be used.
+To add new dashboard just drop the exported JSON inside `imageroot/etc/dashboards` directory.
 
 ## Uninstall
 

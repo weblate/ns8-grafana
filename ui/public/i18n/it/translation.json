@@ -23,7 +23,12 @@
     "settings": {
         "title": "Impostazioni",
         "configure_instance": "Configura {instance}",
-        "save": "Salva"
+        "save": "Salva",
+        "disabled": "Disabilitato",
+        "enabled": "Abilitato",
+        "lets_encrypt": "Certificato Let's Encrypt",
+        "http2https": "Reindirizzare HTTP a HTTPS",
+        "host": "Nome host"
     },
     "error": {
         "error": "Errore",
@@ -42,7 +47,7 @@
         "get-configuration": "Visualizza configurazione",
         "get-module-info": "Visualizza info modulo",
         "list-backups": "Elenca backup",
-        "list-installed-modules": "Elenca moduli installati",
+        "list-installed-modules": "Elenco moduli installati",
         "get-name": "Visualizza nome",
         "get-status": "Visualizza stato",
         "list-backup-repositories": "Elenca repository di backup"

@@ -1,7 +1,8 @@
 {
   "name": "Grafana",
   "description": {
-    "en": "Observability platform and interactive visualization web application"
+    "en": "Observability platform and interactive visualization web application",
+    "it": "Piattaforma per le metriche e applicazione web interattiva per la visualizzazione"
   },
   "categories": [],
   "authors": [

@@ -23,6 +23,11 @@
 import os
 import agent
 
+##
+## we need to made a first discover with default value, 
+## probably prometheus will be instally later if not found yet
+##
+
 # Read prometheus config from local node
 rdb = agent.redis_connect(use_replica=True)
 default_instance = agent.resolve_agent_id("prometheus@cluster")  or "module/prometheus1"

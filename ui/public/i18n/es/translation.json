@@ -26,7 +26,7 @@
         "size": "Size",
         "name": "Name",
         "no_images": "No images",
-        "app_volumes": "Volúmen de la aplicación | Volúmenes de las aplicaciones",
+        "app_volumes": "Volúmen de App | Volúmenes de App",
         "services": "Servicio | Servicios",
         "app_images": "Imagen de la aplicación | Imágenes de la aplicación",
         "no_services": "No hay servicios",

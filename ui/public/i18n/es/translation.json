@@ -54,7 +54,7 @@
         "cannot_create_task": "No se puede crear la tarea {action}"
     },
     "common": {
-        "required": "Required",
+        "required": "Requerido",
         "work_in_progress": "Trabajando",
         "processing": "Procesando..."
     }

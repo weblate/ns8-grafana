@@ -34,7 +34,8 @@
         "mount": "Montar",
         "installation_node": "Nodo de la instalación",
         "node": "Nodo",
-        "no_volumes": "Sin volúmenes"
+        "no_volumes": "Sin volúmenes",
+        "title": "Estado"
     },
     "about": {
         "title": "Acerca de"
@@ -51,5 +52,10 @@
     },
     "task": {
         "cannot_create_task": "No se puede crear la tarea {action}"
+    },
+    "common": {
+        "required": "Requerido",
+        "work_in_progress": "Trabajo en progreso",
+        "processing": "Procesando..."
     }
 }

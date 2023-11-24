@@ -30,7 +30,7 @@
         "services": "Servicio | Servicios",
         "app_images": "Imagen de la aplicación | Imágenes de la aplicación",
         "no_services": "Sin servicios",
-        "app_instance": "Instancia de la aplicación",
+        "app_instance": "Instancia de aplicación",
         "mount": "Montar",
         "installation_node": "Nodo de instalación",
         "node": "Nodo",

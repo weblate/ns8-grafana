@@ -26,7 +26,7 @@
         "size": "Tamaño",
         "name": "Nombre",
         "no_images": "No hay imágenes",
-        "app_volumes": "Volumen de las aplicación | Volúmenes de las aplicaciones",
+        "app_volumes": "Volúmen de la aplicación | Volúmenes de las aplicaciones",
         "services": "Servicio | Servicios",
         "app_images": "Imagen de la aplicación | Imágenes de la aplicación",
         "no_services": "No hay servicios",
@@ -41,7 +41,7 @@
         "title": "Acerca de"
     },
     "action": {
-        "list-backup-repositories": "Lista de repositorios de la copia de seguridad",
+        "list-backup-repositories": "Listar repositorios de respaldo",
         "get-module-info": "Obtener información del módulo",
         "list-installed-modules": "Listar módulos instalados",
         "list-backups": "Listar copias de seguridad",

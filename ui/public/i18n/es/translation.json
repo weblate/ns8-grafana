@@ -26,13 +26,13 @@
         "size": "Tamaño",
         "name": "Nombre",
         "no_images": "Sin imágenes",
-        "app_volumes": "Volumen de la aplicación | Volúmenes de la aplicación",
+        "app_volumes": "Volumen de las aplicación | Volúmenes de las aplicaciones",
         "services": "Servicio | Servicios",
-        "app_images": "Imagen de la aplicación | Imágenes de las aplicaciones",
+        "app_images": "Imagen de la aplicación | Imágenes de la aplicación",
         "no_services": "Sin servicios",
         "app_instance": "Instancia de la aplicación",
         "mount": "Montar",
-        "installation_node": "Nodo de la instalación",
+        "installation_node": "Nodo de instalación",
         "node": "Nodo",
         "no_volumes": "Sin volúmenes",
         "title": "Estado"
@@ -55,7 +55,7 @@
     },
     "common": {
         "required": "Requerido",
-        "work_in_progress": "Trabajo en progreso",
+        "work_in_progress": "Trabajando",
         "processing": "Procesando..."
     }
 }

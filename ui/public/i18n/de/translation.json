@@ -46,7 +46,7 @@
         "title": "Über"
     },
     "action": {
-        "list-backup-repositories": "Speicherorte der Dateisicherungen auflisten",
+        "list-backup-repositories": "Datensicherungen-Ziele auflisten",
         "get-module-info": "Modulinformationen abrufen",
         "list-installed-modules": "installierte Module auflisten",
         "list-backups": "Datensicherungen auflisten",

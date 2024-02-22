@@ -28,7 +28,9 @@
     "http2https": "Redirect HTTP to HTTPS",
     "lets_encrypt": "Let's Encrypt certificate",
     "disabled": "Disabled",
-    "enabled": "Enabled"
+    "enabled": "Enabled",
+    "host_pattern": "Must be a valid fully qualified domain name",
+    "host_format": "Must be a valid fully qualified domain name"
   },
   "about": {
     "title": "About"

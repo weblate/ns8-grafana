@@ -19,7 +19,9 @@
         "save": "Guardar",
         "enabled": "Habilitado",
         "http2https": "Redirigir HTTP a HTTPS",
-        "title": "Ajustes"
+        "title": "Ajustes",
+        "host_pattern": "Debe ser un nombre de dominio válido y completo",
+        "host_format": "Debe ser un nombre de dominio válido y completo"
     },
     "status": {
         "created": "Creado",

@@ -28,7 +28,9 @@
         "enabled": "Abilitato",
         "lets_encrypt": "Certificato Let's Encrypt",
         "http2https": "Reindirizzare HTTP a HTTPS",
-        "host": "Nome host"
+        "host": "Nome host",
+        "host_pattern": "Deve essere un nome di dominio pienamente qualificato valido",
+        "host_format": "Deve essere un nome di dominio pienamente qualificato valido"
     },
     "error": {
         "error": "Errore",

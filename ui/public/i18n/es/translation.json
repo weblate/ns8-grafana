@@ -14,10 +14,10 @@
     "settings": {
         "configure_instance": "Configurar {instance}",
         "host": "Nombre del host",
-        "disabled": "Deshabilitado",
+        "disabled": "Disabled",
         "lets_encrypt": "Certificado Let's Encrypt",
         "save": "Guardar",
-        "enabled": "Habilitado",
+        "enabled": "Enabled",
         "http2https": "Redirigir HTTP a HTTPS",
         "title": "Ajustes",
         "host_pattern": "Debe ser un nombre de dominio válido y completo",

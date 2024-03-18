@@ -1,44 +1,46 @@
 {
+    "settings": {
+        "disabled": "Disabled",
+        "enabled": "Enabled",
+        "configure_instance": "Configure {instance}",
+        "save": "Save",
+        "title": "Settings"
+    },
     "error": {
         "403": "Operation not authorized",
         "cannot_retrieve_installed_modules": "Cannot retrieve installed modules",
         "401": "Invalid authentication",
         "cannot_retrieve_module_info": "Cannot retrieve module info",
-        "network_timeout": "Network timeout",
-        "404": "Resource not found",
         "generic_error": "Something went wrong",
         "error": "Error",
+        "network_timeout": "Network timeout",
+        "404": "Resource not found",
         "network_error": "Network error",
         "validation_error": "Validation error"
     },
-    "settings": {
-        "configure_instance": "Configure {instance}",
-        "host": "Nome do host",
-        "lets_encrypt": "Certificado Let's Encrypt",
-        "http2https": "Redirecionar HTTP para HTTPS",
-        "disabled": "Disabled",
-        "save": "Save",
-        "enabled": "Enabled",
-        "title": "Settings"
+    "common": {
+        "required": "Beharrezkoa",
+        "work_in_progress": "Work in progress",
+        "processing": "Processing..."
     },
     "status": {
+        "created": "Created",
+        "size": "Size",
+        "name": "Name",
         "no_images": "No images",
         "app_volumes": "App volume | App volumes",
         "services": "Service | Services",
         "app_images": "App image | App images",
-        "app_instance": "App instance",
-        "installation_node": "Installation node",
-        "no_volumes": "No volumes",
-        "created": "Created",
-        "size": "Size",
-        "name": "Name",
         "no_services": "No services",
+        "app_instance": "App instance",
         "mount": "Mount",
         "title": "Status",
-        "node": "Node"
+        "installation_node": "Installation node",
+        "node": "Node",
+        "no_volumes": "No volumes"
     },
     "about": {
-        "title": "About"
+        "title": "Honi buruz"
     },
     "action": {
         "list-backup-repositories": "List backup repositories",
@@ -49,11 +51,6 @@
         "configure-module": "Configure module",
         "get-configuration": "Get configuration",
         "get-name": "Get name"
-    },
-    "common": {
-        "work_in_progress": "Work in progress",
-        "processing": "Processing...",
-        "required": "Required"
     },
     "task": {
         "cannot_create_task": "Cannot create task {action}"

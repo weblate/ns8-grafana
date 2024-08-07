@@ -4,7 +4,7 @@
     "en": "Observability platform and interactive visualization web application",
     "it": "Piattaforma per le metriche e applicazione web interattiva per la visualizzazione"
   },
-  "categories": [],
+  "categories": ["monitoring"],
   "authors": [
     {
       "name": "Giacomo Sanchietti",

@@ -53,6 +53,11 @@
         "configure_instance": "Configure {instance}",
         "disabled": "Disabled",
         "enabled": "Enabled",
-        "save": "Save"
+        "save": "Save",
+        "host_format": "Must be a valid fully qualified domain name",
+        "host_pattern": "Must be a valid fully qualified domain name",
+        "host": "Host name",
+        "lets_encrypt": "Let's Encrypt certificate",
+        "http2https": "Redirect HTTP to HTTPS"
     }
 }

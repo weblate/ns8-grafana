@@ -4,7 +4,12 @@
         "enabled": "Enabled",
         "configure_instance": "Configure {instance}",
         "save": "Save",
-        "title": "Settings"
+        "title": "Settings",
+        "host_format": "Must be a valid fully qualified domain name",
+        "host_pattern": "Must be a valid fully qualified domain name",
+        "host": "Host name",
+        "lets_encrypt": "Let's Encrypt certificate",
+        "http2https": "Redirect HTTP to HTTPS"
     },
     "error": {
         "403": "Operation not authorized",

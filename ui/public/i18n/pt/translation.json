@@ -13,13 +13,15 @@
     },
     "settings": {
         "configure_instance": "Configure {instance}",
-        "host": "Nome do host",
-        "lets_encrypt": "Certificado Let's Encrypt",
+        "host": "Host name",
+        "lets_encrypt": "Let's Encrypt certificate",
         "http2https": "Redirecionar HTTP para HTTPS",
         "disabled": "Disabled",
         "save": "Save",
         "enabled": "Enabled",
-        "title": "Settings"
+        "title": "Settings",
+        "host_format": "Must be a valid fully qualified domain name",
+        "host_pattern": "Must be a valid fully qualified domain name"
     },
     "status": {
         "no_images": "No images",

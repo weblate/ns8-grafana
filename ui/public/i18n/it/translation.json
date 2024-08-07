@@ -1,7 +1,7 @@
 {
     "common": {
         "required": "Obbligatorio",
-        "processing": "Elaborazione in corso...",
+        "processing": "In elaborazione…",
         "work_in_progress": "In lavorazione"
     },
     "status": {
@@ -24,8 +24,8 @@
         "title": "Impostazioni",
         "configure_instance": "Configura {instance}",
         "save": "Salva",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
+        "disabled": "Disabilitato",
+        "enabled": "Abilitato",
         "lets_encrypt": "Certificato Let's Encrypt",
         "http2https": "Reindirizzare HTTP a HTTPS",
         "host": "Nome host",
@@ -58,6 +58,6 @@
         "title": "Informazioni"
     },
     "task": {
-        "cannot_create_task": "Impossibile eseguire task {action}"
+        "cannot_create_task": "Impossibile eseguire il task {action}"
     }
 }

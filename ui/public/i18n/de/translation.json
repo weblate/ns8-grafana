@@ -1,6 +1,6 @@
 {
     "error": {
-        "403": "Vorgang nicht autorisiert",
+        "403": "Vorgang nicht zulässig",
         "cannot_retrieve_installed_modules": "Fehler beim Abruf installierter Module",
         "401": "Authentifizierung fehlerhaft",
         "cannot_retrieve_module_info": "Fehler beim Abruf der Modul-Info",
@@ -48,10 +48,10 @@
         "title": "Über"
     },
     "action": {
-        "list-backup-repositories": "Backup-Speicherorte auflisten",
+        "list-backup-repositories": "Sicherungs-Ziele auflisten",
         "get-module-info": "Modul-Info abrufen",
         "list-installed-modules": "Installierte Module auflisten",
-        "list-backups": "Backups auflisten",
+        "list-backups": "Datensicherungen auflisten",
         "get-status": "Status abrufen",
         "configure-module": "Modul konfigurieren",
         "get-configuration": "Konfiguration abrufen",
